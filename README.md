@@ -6,7 +6,7 @@
     This installs the dependencies as defined in the package.json file.
     
 3) Type: `typings install`
-    This installs the dependencies as defined in the package.json file.
+    This installs the ambient typings definitions as defined in the typings.json file.
 
 4) Type: `npm start`
     This launches the TypeScript compiler (tsc) to compile the application and watches for changes. 
