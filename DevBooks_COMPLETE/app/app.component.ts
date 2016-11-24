@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { WelcomeComponent } from './home/welcome.component';
 
 @Component({
+  moduleId: module.id,
   selector: 'bs-app',
-  templateUrl: './app/app.component.html',
-  directives: [WelcomeComponent]
+  templateUrl: 'app.component.html'
 })
 
 export class AppComponent {
-  pageTitle: string = "Dev Book Store";
+  pageTitle: string = "Dev Book Store"
+  searchBox: string = '';
 }
