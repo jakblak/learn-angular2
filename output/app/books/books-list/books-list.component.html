@@ -1,0 +1,155 @@
+<div class="container">
+        <section id="products">
+        <div class="row">
+        <div class="container">
+        <h2>{{ showMessage }}</h2>
+        </div>
+          <div class="col-md-4"
+                  *ngFor="let book of books">
+          <bs-favorite
+                  [reviews]="book.bookReviews"
+                  (notify)="onNotifyClicked($event)"></bs-favorite>
+            <div class="thumbnail">
+              <img [src]="book.bookImageUrl"
+                       [style.width.px]="imageWidth"
+                       *ngIf='showImage'>
+              <div class="caption">
+              <button class="btn btn-primary" (click)='toggleImage()'>
+                {{ showImage ? 'Hide Image' : 'Show Image'}}
+              </button>
+              <button class="btn btn-warning" (click)='changeMethod()'>
+                Click Me
+              </button>
+                <h4 class="pull-right">
+                  {{book.bookPrice | currency: 'EUR' : true}}
+                </h4>
+                <h4><a href="product.html">{{book.bookTitle}}</a></h4>
+                <p><b>Author: </b>{{book.bookAuthor}}</p>
+                <p><b>Description: </b>{{book.bookDescription | limitChar: '10'}}</p>
+                <p><b>Published On: </b>{{book.publishedOn | date: 'longDate' }}</p>
+                <p><b>In Stock: </b>{{book.inStock | uppercase }}</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  <p class="pull-right">Reviews {{book.bookReviews}}</p>
+                  <div class="clearfix"></div>
+                  <p class="text-success" *ngIf="booksInStock > 0">Number in Stock: {{booksInStock}}</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/656.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $19.95
+                </h4>
+                <h4><a href="product.html">War and Peace</a></h4>
+                <p><b>Author: </b>Leo Tolstoy</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  <p class="pull-right">15 Reviews</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/5907.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $14.95
+                </h4>
+                <h4><a href="product.html">The Hobbit</a></h4>
+                <p><b>Author: </b>J.R.R. Tolkien</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  <p class="pull-right">8 Reviews</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/107291.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $9.95
+                </h4>
+                <h4><a href="product.html">Needful Things</a></h4>
+                <p><b>Author: </b>Stephen King</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <p class="pull-right">4 Reviews</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/2657.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $8.95
+                </h4>
+                <h4><a href="product.html">To Kill a Mockingbird</a></h4>
+                <p><b>Author: </b>Harper Lee</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  <p class="pull-right">15 Reviews</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/16213.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $11.95
+                </h4>
+                <h4><a href="product.html">The Hot Zone</a></h4>
+                <p><b>Author: </b>Richard Preston</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star-empty"></span>
+                  <p class="pull-right">22 Reviews</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img src="app/assets/images/2095.jpg">
+              <div class="caption">
+                <h4 class="pull-right">
+                  $14.95
+                </h4>
+                <h4><a href="product.html">The Universe in a Nutshell</a></h4>
+                <p><b>Author: </b>Stephen Hawking</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  <p class="pull-right">14 Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</div>
