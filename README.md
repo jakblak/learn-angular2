@@ -12,3 +12,5 @@ It also starts the lite-server and launches in the browser to run the applicatio
 ## Folder Organization
 **starter** - our starter project taken from angular.io              
 **input** - input example
+**output** - output example
+**favComp** - add our favorite component
