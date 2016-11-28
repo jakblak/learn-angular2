@@ -1,9 +1,6 @@
 <div class="container">
         <section id="products">
         <div class="row">
-        <div class="container">
-        <h2>{{ favoriteMessage }}</h2>
-        </div>
           <div class="col-md-4"
                   *ngFor="let book of books">
             <div class="thumbnail">
@@ -13,9 +10,6 @@
               <div class="caption">
               <button class="btn btn-primary" (click)='toggleImage()'>
                 {{ showImage ? 'Hide Image' : 'Show Image'}}
-              </button>
-              <button class="btn btn-warning" (click)='changeMethod()'>
-                Click Me
               </button>
                 <h4 class="pull-right">
                   {{book.bookPrice | currency: 'EUR' : true}}
@@ -32,10 +26,6 @@
                   <p class="pull-right">Reviews {{book.bookReviews}}</p>
                   <div class="clearfix"></div>
                   <p class="text-success" *ngIf="booksInStock > 0">Number in Stock: {{booksInStock}}</p>
-                  <bs-favorite
-                  [reviews]="book.bookReviews"
-                  [favorite]="book.bookTitle"
-                  (favoriteClicked)="onFavoriteClicked($event)"></bs-favorite>
                 </div>
               </div>
             </div>
