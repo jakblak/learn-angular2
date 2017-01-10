@@ -13,11 +13,19 @@ It also starts the lite-server and launches in the browser to run the applicatio
 
 ## Folder Organization
 **starter** - Lecture 9: Starter Files Setup
+
 **eventBind** - Lecture 27: Event Binding in our App
+
 **customPipe** - Lecture 35: Custom Pipes
+
 **input** - Lecture 45: Input Example
+
 **output** - Lecture 47: Output Example
+
 **favorite_component** - Lecture 48: Favorite Component
+
 **service_example** - Lecture 52: Services Example
+
 **http_example** - Lecture 57: Http with Observables in our App
+
 **routing_solution** - Lecture 62: Routing Challenge Solution
