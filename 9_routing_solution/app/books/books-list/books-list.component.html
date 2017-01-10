@@ -1,0 +1,37 @@
+<div class="container">
+        <section id="products">
+        <div class="row">
+        <div class="container">
+        <h2>{{ favoriteMessage }}</h2>
+        </div>
+          <div class="col-md-4"
+                  *ngFor="let book of books; let i=index">
+            <div class="thumbnail">
+              <img [src]="book.imageUrl"
+                       [style.width.px]="imageWidth"
+                       *ngIf='showImage'>
+              <div class="caption">
+                <h4 class="pull-right">
+                  {{book.price | currency: 'EUR' : true}}
+                </h4>
+                <h4><a href="product.html">{{book.name}}</a></h4>
+                <p><b>Author: </b>{{book.author}}</p>
+                <p><b>Description: </b>{{book.description | limitChar: '10'}}</p>
+                <p><b>Published On: </b>{{book.releaseDate | date: 'longDate' }}</p>
+                <b>In Stock: </b><p>{{ book.inStock ? 'YES' : 'NO'}}</p>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  <p class="pull-right">Reviews {{book.starRating}}</p>
+                  <div class="clearfix"></div>
+                  <bs-favorite
+                  [reviews]="book.starRating"
+                  [favorite]="book.name"
+                  (favoriteClicked)="onFavoriteClicked($event)"></bs-favorite>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+</div>
