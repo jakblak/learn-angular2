@@ -29,3 +29,5 @@ It also starts the lite-server and launches in the browser to run the applicatio
 **http_example** - Lecture 57: Http with Observables in our App
 
 **routing_solution** - Lecture 62: Routing Challenge Solution
+
+**bookDetails** - Lecture 64: Display Book Deails

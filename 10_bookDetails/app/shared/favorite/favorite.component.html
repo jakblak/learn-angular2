@@ -1,0 +1,8 @@
+<!-- title sets the image title -->
+<div class="fave"
+  [title]='favorite'
+  (click)='onClick()'>
+  Add to favorite: <i class="fa fa-heart"
+                              [class.faveSelected]='isSelected(fave)'></i>
+                              &nbsp; {{reviews}}
+</div>

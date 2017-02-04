@@ -11,7 +11,7 @@
     "inStock" : true,
     "price" : 19.95,
     "starRating": 4.11,
-    "imageUrl": "assets/images/656.png"
+    "imageUrl": "app/assets/images/656.jpg"
   },
   {
     "id" : "2",
@@ -25,7 +25,7 @@
     "inStock" : true,
     "price" : 14.95,
     "starRating": 4.23,
-    "imageUrl": "assets/images/5907.png"
+    "imageUrl": "app/assets/images/5907.jpg"
   },
   {
     "id" : "3",
@@ -39,7 +39,7 @@
     "inStock" : true,
     "price" : 9.95,
     "starRating": 3.87,
-    "imageUrl": "assets/images/107291.png"
+    "imageUrl": "app/assets/images/107291.jpg"
   },
   {
     "id" : "4",
@@ -53,7 +53,7 @@
     "inStock" : true,
     "price" : 8.95,
     "starRating": 4.24,
-    "imageUrl": "assets/images/2657.png"
+    "imageUrl": "app/assets/images/2657.jpg"
   },
   {
     "id" : "5",
@@ -67,22 +67,20 @@
     "inStock" : true,
     "price" : 11.95,
     "starRating": 3.75,
-    "imageUrl": "assets/images/16213.png"
+    "imageUrl": "app/assets/images/16213.jpg"
   },
   {
     "id" : "6",
     "name" : "The Universe in a Nutshell",
     "productCode": "NKL-0016",
     "releaseDate": "November, 2001",
-    "description": "Stephen Hawking’s phenomenal, multimillion-copy bestseller, A Brief History of Time, introduced the ideas of this brilliant theoretical physicist to readers all over the world.
-
-Now, in a major publishing event, Hawking returns with a lavishly illustrated sequel that unravels the mysteries of the major breakthroughs that have occurred in the years since the release of his acclaimed first book.",
+    "description": "Stephen Hawking’s phenomenal, multimillion-copy bestseller, A Brief History of Time, introduced the ideas of this brilliant theoretical physicist to readers all over the world. Now, in a major publishing event, Hawking returns with a lavishly illustrated sequel that unravels the mysteries of the major breakthroughs that have occurred in the years since the release of his acclaimed first book.",
     "author" : "Stephen Hawking",
     "genre" : "nonfiction",
     "specifications": "Hardcover, 216 pages",
     "inStock" : true,
     "price" : 14.95,
     "starRating": 4.12,
-    "imageUrl": "assets/images/2095.png"
+    "imageUrl": "app/assets/images/2095.jpg"
   }
 ]
