@@ -16,26 +16,26 @@
     }
   ],
   "dependencies": {
-    "@angular/common": "~2.0.2",
-    "@angular/compiler": "~2.0.2",
-    "@angular/core": "~2.0.2",
-    "@angular/forms": "~2.0.2",
-    "@angular/http": "~2.0.2",
-    "@angular/platform-browser": "~2.0.2",
-    "@angular/platform-browser-dynamic": "~2.0.2",
-    "@angular/router": "~3.0.2",
-    "@angular/upgrade": "~2.0.2",
-    "angular-in-memory-web-api": "~0.1.5",
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "angular-in-memory-web-api": "~0.2.4",
+
     "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "5.0.0-beta.12",
-    "systemjs": "0.19.39",
-    "zone.js": "^0.6.25"
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "concurrently": "^3.0.0",
-    "font-awesome": "^4.6.3",
+    "concurrently": "^3.2.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3",
     "typings": "^1.4.0"
